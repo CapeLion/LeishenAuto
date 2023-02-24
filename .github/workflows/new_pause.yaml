@@ -6,9 +6,11 @@ on:
    # 定时任务，北京时间24点执行任务 16 + 8 = 24
     - cron: '*/5 * * * *'
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: LeiGodLoginInfo
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 10.x
