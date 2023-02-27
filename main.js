@@ -14,6 +14,7 @@ function start(username, password) {
     console.log('🌀雷神加速器暂停助手 开始运行-------')
     if (!username || !password) {
         console.log("Empty username or password");
+        console.log(username+"&&&"+password)
         return;
     }
     const user = {
@@ -37,6 +38,7 @@ function start(username, password) {
             })
         } else {
             console.log('🌀雷神加速器暂停助手 失败-------')
+            console.log(res)
         }
         console.log('🌀雷神加速器暂停助手 结束运行-------')
     })
