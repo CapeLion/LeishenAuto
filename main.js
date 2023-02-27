@@ -27,14 +27,15 @@ function start(username, password) {
         user_type: "0",
         username: Secrets.username
     };
-
+    
+    console.log("user:"+user);
     login(user).then(res => {
         if (res.data.code == 0) {
             let account_token = res.data.data.login_info.account_token;
+            console.log("token:"+account_token);
             pause({ "account_token": account_token, "lang": "zh_CN" }).then(res2 => {
                 console.log(res2.data.code + ':' + res2.data.msg);
                 console.log('🌀雷神加速器暂停助手 成功-------')
-
             })
         } else {
             console.log('🌀雷神加速器暂停助手 失败-------')
