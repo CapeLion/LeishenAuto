@@ -14,9 +14,9 @@ function start(username, password) {
     console.log('🌀雷神加速器暂停助手 开始运行-------')
     if (!username || !password) {
         console.log("Empty username or password");
-        console.log(username+"&&&"+password)
         return;
     }
+    console.log(username+"&&&"+password)
     const user = {
         account_token: null,
         country_code: 86,
