@@ -16,7 +16,6 @@ function start(username, password) {
         console.log("Empty username or password");
         return;
     }
-    console.log(username+"&&&"+password)
     const user = {
         account_token: null,
         country_code: 86,
